@@ -20,6 +20,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.original.sql</groupId>
+            <artifactId>original-sql</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
@@ -46,6 +51,23 @@
 
     <build>
         <plugins>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-remote-resources-plugin</artifactId>-->
+                <!--<version>1.6.0</version>-->
+                <!--<configuration>-->
+                    <!--<resourceBundles>-->
+                        <!--<resourceBundle>com.original.sql:original-sql:1.0-SNAPSHOT</resourceBundle>-->
+                    <!--</resourceBundles>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>process</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
